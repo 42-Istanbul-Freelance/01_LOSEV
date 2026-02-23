@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 42 İstanbul Freelance Vibe Coding - Boilerplate (Starter Kit)
 
-## Getting Started
+Bu proje **42 İstanbul Freelance Vibe Coding Hackathon**'unda katılımcılara hızlı bir başlangıç noktası sağlamak amacıyla "Boş sayfa sendromunu (Blank page syndrome)" önlemek için hazırlanmıştır.
 
-First, run the development server:
+## Teknoloji Yığıtı (Tech Stack)
+- Next.js (App Router)
+- TailwindCSS
+- TypeScript
+- Docker & Docker Compose
+
+## Kurulum ve Çalıştırma
+
+### Yerel Geliştirme (Local Development)
+Projeyi cihazınızda çalıştırmak için:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Uygulama **http://localhost:3000** üzerinde ulaşılabilir olacaktır.
+
+### Docker ile Çalıştırma
+Projeyi hızlıca production-ready bir konteynerda çalıştırmak için:
+
+```bash
+docker-compose up --build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Hackathon İpuçları
+1. **Intra:** Projeni intra.42freelance.com adresine yüklemeyi unutma.
+2. **Yardım İste:** Takıldığın yerde "Needs Help" (Yardım Lazım) butonuyla diğer masalardan yardım talep et.
+3. **Sorun Çöz:** Kusursuz kod yazmaya değil, sadece sorunu çözecek MVP (Minimum Viable Product)'yi çıkartmaya odaklan. Sürdürülebilirlik ve DevOps maliyetleri **42 İstanbul Freelance** tarafından üstlenilmiştir.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Sistem aktif, boot sekansı tamamlandı. Hemen üretmeye başla.* 🚀

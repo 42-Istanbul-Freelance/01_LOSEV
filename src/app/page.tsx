@@ -1,65 +1,73 @@
-import Image from "next/image";
-
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+	return (
+		<div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-[calc(100vh-140px)]">
+			<div className="max-w-3xl w-full border border-zinc-800 bg-black/80 backdrop-blur-xl p-8 shadow-2xl relative">
+				{/* Terminal Header */}
+				<div className="absolute top-0 left-0 w-full h-8 bg-zinc-900 border-b border-zinc-800 flex items-center px-4 gap-2">
+					<div className="w-3 h-3 rounded-full bg-red-500/50"></div>
+					<div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+					<div className="w-3 h-3 rounded-full bg-green-500/50"></div>
+					<p className="ml-2 font-mono text-[10px] text-zinc-500 tracking-wider">~/42freelance/vibe-coding</p>
+				</div>
+
+				<div className="mt-8 space-y-6">
+					<div className="border-l-2 border-emerald-500 pl-4 py-2">
+						<h1 className="text-3xl md:text-5xl font-serif font-medium tracking-tight text-white mb-2">
+							SİSTEM BOOT EDİLDİ.
+						</h1>
+						<p className="font-mono text-zinc-400 text-sm">
+							[ status: ok ] Boilerplate aktif. Üretmeye başlayabilirsiniz.
+						</p>
+					</div>
+
+					<div className="space-y-4">
+						<p className="text-zinc-300 leading-relaxed font-sans mt-4">
+							Bu boilerplate, 42 İstanbul Freelance Hackathon & Vibe Coding sürecinde sizi konfigürasyon
+							yükünden kurtarmak için tasarlanmıştır. İçerisinde <span className="text-white font-mono bg-zinc-900 px-1 py-0.5 rounded">TailwindCSS</span>, <span className="text-white font-mono bg-zinc-900 px-1 py-0.5 rounded">TypeScript</span> ve
+							hazır bir <span className="text-white font-mono bg-zinc-900 px-1 py-0.5 rounded">Docker</span> altyapısı mevcuttur.
+						</p>
+
+						<div className="bg-zinc-900/50 border border-zinc-800 p-4 rounded-sm font-mono text-sm">
+							<div className="flex items-center gap-2 text-zinc-400 mb-2">
+								<span className="text-emerald-500">›</span> Başlamak için:
+							</div>
+							<code className="text-zinc-200 block mb-1">$ src/app/page.tsx'i düzenleyin</code>
+							<code className="text-zinc-200 block mb-1">$ intra.42freelance.com üzerinden projenizi ekleyin</code>
+							<code className="text-zinc-200 block">$ Yardıma ihtiyacınız olursa "Needs Help" bayrağı açın</code>
+						</div>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+						<a
+							href="https://intra.42freelance.com"
+							target="_blank"
+							rel="noreferrer"
+							className="group border border-zinc-800 bg-zinc-950 p-4 hover:border-emerald-500/50 transition-colors flex flex-col justify-between h-32"
+						>
+							<div>
+								<h3 className="font-mono text-white text-sm flex items-center gap-2">
+									[ INTRA ]
+									<span className="group-hover:translate-x-1 transition-transform">→</span>
+								</h3>
+								<p className="text-zinc-500 text-xs mt-2">Takımınızın projesini 42 İstanbul Freelance ekosistemine ekleyin.</p>
+							</div>
+						</a>
+
+						<a
+							href="#"
+							className="group border border-zinc-800 bg-zinc-950 p-4 hover:border-zinc-500 transition-colors flex flex-col justify-between h-32"
+						>
+							<div>
+								<h3 className="font-mono text-white text-sm flex items-center gap-2">
+									[ DEVOPS & SUNUCU ]
+									<span className="group-hover:translate-x-1 transition-transform">→</span>
+								</h3>
+								<p className="text-zinc-500 text-xs mt-2">Geliştirdiğiniz uygulamanın açık kaynak deployment kılavuzu.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }
