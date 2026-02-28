@@ -2,6 +2,16 @@
 
 Bu proje **42 İstanbul Freelance Vibe Coding Hackathon**'unda katılımcılara hızlı bir başlangıç noktası sağlamak amacıyla "Boş sayfa sendromunu (Blank page syndrome)" önlemek için hazırlanmıştır.
 
+## 🤖 AI ile Nasıl Kodlanır? (Agent Plan)
+Geleneksel kodlama yapmayın, AI kod asistanlarının potansiyelini "Agent Plan" sistemi ile 10 katına çıkarın:
+
+1. **Bağlamı Devret (Handoff):** Yeni bir chat açtığınızda AI'a klasördeki planları okumasını söyleyin:
+   > `docs/agent_plan/HANDOFF_PROMPT.md dosyasını okuyarak projenin neresinde kaldığımızı anla ve sıradaki görevi bularak işleme başla.`
+
+2. **Görev Bazlı İlerleme:** Her yeni özelliği `docs/agent_plan/00X_GOREV_ADI.md` formatında (**000_SABLON_GOREV.md** dosyasına uygun olarak) planlayarak AI'a verin.
+
+3. **Kaldığın Yerden Devam Et (`npm run ai:next`):** Terminalden bu komutu çalıştırarak bir sonraki görev için hazır prompt'u alın ve AI'a yapıştırın. Sohbet geçmişinizi kaybetseniz bile kodlamaya anında devam edebilirsiniz!
+
 ## Teknoloji Yığıtı (Tech Stack)
 - Next.js (App Router)
 - TailwindCSS
